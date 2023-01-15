@@ -1,3 +1,4 @@
+const popupMessage = require('./popup.constants')
 let express = require('express');
 let path = require('path');
 
@@ -31,7 +32,7 @@ app.get('/popup', (req, res) => {
       return res.status(500).json({})
     }
     res.json({
-      message: "<p>This is an important message which requires a confirmation.</p>"
+      message: `<p>${popupMessage}</p>`
     })
   }, Math.random() * 1000)
 });
