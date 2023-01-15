@@ -6,5 +6,8 @@
 ```npm start```
 Visit http://localhost:4000/
 
-## Run e2e tests
-```npm test```
+## Run cypress e2e tests with cypress GUI
+```npx cypress open```
+
+## Run cypress e2e tests in headless mode
+```npx cypress run --headless```
