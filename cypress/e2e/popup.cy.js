@@ -1,4 +1,4 @@
-import { popupMessage } from "../../popup.constants";
+const popupMessage = require('../../popup.constants')
 
 describe("Popup", () => {
   it("should be shown with correct text, when page is loaded for first time", () => {
